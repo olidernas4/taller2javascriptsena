@@ -1,0 +1,35 @@
+<script>
+
+    var formulas = prompt("Hola, Escribe el nombre de la figura para hallar el area; cuadrado, triangulo, circulo")
+   switch (formulas) {
+       case "cuadrado":
+         let num1 = prompt("Ingrese primer lado")
+         let num2 = prompt("Ingrese segundo lado")
+         let area = parseInt(num1) * parseInt(num2)
+          document.write("El area del cuadrado es:  "  + area);
+        break;
+        case "triangulo":
+           let nume1 = prompt("Ingrese valor de la base")
+           let nume2 = prompt("Ingrese valor de la altura")
+           let nume3 = 2
+           area2 = (parseInt(nume1) + parseInt(nume2))
+           div = parseInt(nume3)
+           result = parseInt(area2) / parseInt(div)
+           document.write("El area del triangulo es: " + result);
+        break;
+        case "circulo":
+        let number1 = prompt("Ingrese el radio del circulo");
+        let number2= Math.PI
+        radio = (parseInt(number1) * parseInt(number1));
+        area3 = (parseInt(radio) * parseInt(number2));
+        document.write("El area del circulo es: " + area3);
+        break;
+        default:
+        document.write("Lo sentimos no contamos con ese producto...")
+        
+
+
+    }{
+
+    }
+ </script>
